@@ -1,0 +1,50 @@
+/* Obecné vlastnosti------------------------------------------------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Proměnné------------------------------------------------------------------------------------------------------------------*/
+
+:root {
+  --font-barva: rgb(201, 193, 82);
+  --background-color-transparent: #05203dc0;
+  --background-color: #05203d;
+}
+
+/* Vlastnosti pro zobrazení na menších obrazovkách */
+
+@media (max-width: 600px) {
+  header {
+    position: relative;
+  }
+
+  header nav {
+    display: none;
+    position: absolute;
+    margin-top: 190px;
+    background-color: var(--background-color);
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+    font-size: 23px;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 600px) {
+  header nav {
+    display: block !important;
+  }
+}

@@ -1,0 +1,105 @@
+/* Obecné vlastnosti------------------------------------------------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Proměnné------------------------------------------------------------------------------------------------------------------*/
+
+:root {
+  --font-barva: rgb(201, 193, 82);
+  --background-color-transparent: #05203dc0;
+  --background-color: #05203d;
+}
+
+/* Header------------------------------------------------------------------------------------------------------------------ */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--background-color);
+  height: 70px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* Navigace------------------------------------------------------------------------------------------------------------------*/
+
+nav {
+  margin-right: 30px;
+}
+
+nav ul {
+  opacity: 1;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+
+/* Pozadí------------------------------------------------------------------------------------------------------------------ */
+
+.welcome {
+  background: url(img/background.webp);
+  min-height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  color: var(--font-barva);
+  background-color: var(--background-color-transparent);
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px;
+}
+
+/* Hlavní text a jeho sloučásti ------------------------------------------------------------------------------------------------------------------*/
+
+.text h1 {
+  padding-bottom: 50px;
+}
+
+.text p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.text ul {
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.text ul li {
+  margin-bottom: 30px;
+}
